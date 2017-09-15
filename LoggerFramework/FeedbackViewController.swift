@@ -8,8 +8,10 @@
 
 import UIKit
 //import TravelAndTransportationDataAdapter
-
-struct FeedbackCategoryState {
+@objc public protocol LoginDelegate : class {
+    
+}
+ struct FeedbackCategoryState {
     let appName: String
     let appId: String
     var isSelected: Bool
@@ -37,10 +39,10 @@ let sendFailedStr = NSLocalizedString("Failed to send feedback, please try again
 let reviewOptionalStr = NSLocalizedString("Review (Optional)", comment: "Review (Optional)")
 let reviewRequiredStr = NSLocalizedString("Review (Required)", comment: "Review (Required)")
 
-class FeedbackViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class FeedbackViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+    open weak var delegate : LoginDelegate?
     var categoryStates = [FeedbackCategoryState]()
     
     let estimatedCategoryRowHeight: CGFloat = 44.0
@@ -49,7 +51,7 @@ class FeedbackViewController: UIViewController, UITableViewDelegate, UITableView
     
     var refreshTokenCounter = 0
     
-    override func viewDidLoad() {
+   public override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
@@ -180,11 +182,11 @@ class FeedbackViewController: UIViewController, UITableViewDelegate, UITableView
         self.dismiss(animated: true, completion: nil)
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+  public  func numberOfSections(in tableView: UITableView) -> Int {
         return FeedbackSectionType.count
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  public  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let feedbackSection = FeedbackSectionType(rawValue: section) {
             switch feedbackSection {
             case .categorySection:
@@ -198,7 +200,7 @@ class FeedbackViewController: UIViewController, UITableViewDelegate, UITableView
         return 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let section = FeedbackSectionType(rawValue: indexPath.section) {
             switch section {
             case .categorySection:
@@ -221,7 +223,7 @@ class FeedbackViewController: UIViewController, UITableViewDelegate, UITableView
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+  public  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if FeedbackSectionType(rawValue: section) == .categorySection {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderCell")
             return cell
@@ -230,7 +232,7 @@ class FeedbackViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+  public  func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         if FeedbackSectionType(rawValue: section) == .categorySection {
             return estimatedSectionHeaderHeight
         } else {
@@ -238,7 +240,7 @@ class FeedbackViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+  public  func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         if let section = FeedbackSectionType(rawValue: indexPath.section) {
             switch section {
             case .categorySection:
@@ -254,7 +256,7 @@ class FeedbackViewController: UIViewController, UITableViewDelegate, UITableView
         return 0
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+  public  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if FeedbackSectionType(rawValue: indexPath.section) == .categorySection {
             setSelectionStateForIndex(indexPath.row)
             var indexPaths = [IndexPath]()
