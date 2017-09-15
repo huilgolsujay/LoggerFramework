@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0837E9231F6BB85000AE94B5 /* LoggerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0837E9211F6BB85000AE94B5 /* LoggerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0837E92A1F6BB89B00AE94B5 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0837E9291F6BB89B00AE94B5 /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0837E91E1F6BB84F00AE94B5 /* LoggerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoggerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0837E9211F6BB85000AE94B5 /* LoggerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggerFramework.h; sourceTree = "<group>"; };
 		0837E9221F6BB85000AE94B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0837E9291F6BB89B00AE94B5 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				0837E9211F6BB85000AE94B5 /* LoggerFramework.h */,
 				0837E9221F6BB85000AE94B5 /* Info.plist */,
+				0837E9291F6BB89B00AE94B5 /* Logging.swift */,
 			);
 			path = LoggerFramework;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 					0837E91D1F6BB84F00AE94B5 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9T5LPK7NKK;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0837E92A1F6BB89B00AE94B5 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +247,7 @@
 		0837E9271F6BB85000AE94B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9T5LPK7NKK;
@@ -254,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.fhc.LoggerFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +268,7 @@
 		0837E9281F6BB85000AE94B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9T5LPK7NKK;
