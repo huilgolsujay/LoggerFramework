@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0837E9231F6BB85000AE94B5 /* LoggerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0837E9211F6BB85000AE94B5 /* LoggerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0837E92A1F6BB89B00AE94B5 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0837E9291F6BB89B00AE94B5 /* Logging.swift */; };
+		088861381F6BC791000C8295 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088861321F6BC791000C8295 /* Feedback.storyboard */; };
+		088861391F6BC791000C8295 /* FeedbackCategorySelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088861331F6BC791000C8295 /* FeedbackCategorySelectionCell.swift */; };
+		0888613A1F6BC791000C8295 /* FeedbackNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088861341F6BC791000C8295 /* FeedbackNoteCell.swift */; };
+		0888613B1F6BC791000C8295 /* FeedbackRatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088861351F6BC791000C8295 /* FeedbackRatingCell.swift */; };
+		0888613C1F6BC791000C8295 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088861361F6BC791000C8295 /* FeedbackViewController.swift */; };
+		0888613D1F6BC791000C8295 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088861371F6BC791000C8295 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +22,12 @@
 		0837E9211F6BB85000AE94B5 /* LoggerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggerFramework.h; sourceTree = "<group>"; };
 		0837E9221F6BB85000AE94B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0837E9291F6BB89B00AE94B5 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		088861321F6BC791000C8295 /* Feedback.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
+		088861331F6BC791000C8295 /* FeedbackCategorySelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackCategorySelectionCell.swift; sourceTree = "<group>"; };
+		088861341F6BC791000C8295 /* FeedbackNoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackNoteCell.swift; sourceTree = "<group>"; };
+		088861351F6BC791000C8295 /* FeedbackRatingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackRatingCell.swift; sourceTree = "<group>"; };
+		088861361F6BC791000C8295 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		088861371F6BC791000C8295 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,12 @@
 		0837E9201F6BB84F00AE94B5 /* LoggerFramework */ = {
 			isa = PBXGroup;
 			children = (
+				088861321F6BC791000C8295 /* Feedback.storyboard */,
+				088861331F6BC791000C8295 /* FeedbackCategorySelectionCell.swift */,
+				088861341F6BC791000C8295 /* FeedbackNoteCell.swift */,
+				088861351F6BC791000C8295 /* FeedbackRatingCell.swift */,
+				088861361F6BC791000C8295 /* FeedbackViewController.swift */,
+				088861371F6BC791000C8295 /* Images.xcassets */,
 				0837E9211F6BB85000AE94B5 /* LoggerFramework.h */,
 				0837E9221F6BB85000AE94B5 /* Info.plist */,
 				0837E9291F6BB89B00AE94B5 /* Logging.swift */,
@@ -126,6 +144,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				088861381F6BC791000C8295 /* Feedback.storyboard in Resources */,
+				0888613D1F6BC791000C8295 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0837E92A1F6BB89B00AE94B5 /* Logging.swift in Sources */,
+				0888613B1F6BC791000C8295 /* FeedbackRatingCell.swift in Sources */,
+				0888613A1F6BC791000C8295 /* FeedbackNoteCell.swift in Sources */,
+				0888613C1F6BC791000C8295 /* FeedbackViewController.swift in Sources */,
+				088861391F6BC791000C8295 /* FeedbackCategorySelectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +328,7 @@
 				0837E9281F6BB85000AE94B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
