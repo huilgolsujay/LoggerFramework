@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
           #9.
           s.source_files     = "LoggerFramework", "LoggerFramework/**/*.{h,m,swift}"
           s.resource_bundles = {
-    'LoggerFramework' => ['Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+    'LoggerFramework' => ['Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
   }
           
 
