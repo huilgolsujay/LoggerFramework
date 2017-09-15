@@ -15,6 +15,10 @@ public class Ylogging
     
     public init() {}
     
+    public func setName ()
+    {
+        nametoLog = "sujay"
+    }
     public func LogName()
     {
         print("name is \(nametoLog)")
