@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
           s.source              = { :git => "https://github.com/huilgolsujay/LoggerFramework.git", :tag => "1.0.0" }
           #9.
           s.source_files     = "LoggerFramework", "LoggerFramework/**/*.{h,m,swift}"
-          s.resource_bundles = {
-    'LoggerFramework' => ['LoggerFramework/**/*.{storyboard,xib,xcassets,json,imageset,png}']
-  }
+         s.resources = "LoggerFramework/**/*.{png,jpeg,jpg,storyboard,xib}"
           
 
     end
