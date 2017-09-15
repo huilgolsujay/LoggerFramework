@@ -8,9 +8,9 @@
 
 import UIKit
 //import TravelAndTransportationDataAdapter
-@objc public protocol LoginDelegate : class {
-    
-}
+//@objc public protocol LoginDelegate : class {
+//    
+//}
  struct FeedbackCategoryState {
     let appName: String
     let appId: String
@@ -42,7 +42,7 @@ let reviewRequiredStr = NSLocalizedString("Review (Required)", comment: "Review 
 public class FeedbackViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    open weak var delegate : LoginDelegate?
+//    open weak var delegate : LoginDelegate?
     var categoryStates = [FeedbackCategoryState]()
     
     let estimatedCategoryRowHeight: CGFloat = 44.0
