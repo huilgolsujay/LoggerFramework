@@ -21,5 +21,6 @@ Pod::Spec.new do |s|
          s.subspec ‘iOSApiConnection’ do |iOSApiConnection|
   # subspec for users who don't want the third party PayPal 
   # & Stripe bloat
-  
+  end
+
 end
