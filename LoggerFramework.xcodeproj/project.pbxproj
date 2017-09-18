@@ -14,6 +14,7 @@
 		088861721F6BE077000C8295 /* FeedbackNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0888616D1F6BE077000C8295 /* FeedbackNoteCell.swift */; };
 		088861731F6BE077000C8295 /* FeedbackRatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0888616E1F6BE077000C8295 /* FeedbackRatingCell.swift */; };
 		088861741F6BE077000C8295 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0888616F1F6BE077000C8295 /* FeedbackViewController.swift */; };
+		08D1456A1F6FB13E0001FD49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08D145691F6FB13E0001FD49 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0888616D1F6BE077000C8295 /* FeedbackNoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackNoteCell.swift; sourceTree = "<group>"; };
 		0888616E1F6BE077000C8295 /* FeedbackRatingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackRatingCell.swift; sourceTree = "<group>"; };
 		0888616F1F6BE077000C8295 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		08D145691F6FB13E0001FD49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		0837E9201F6BB84F00AE94B5 /* LoggerFramework */ = {
 			isa = PBXGroup;
 			children = (
+				08D145691F6FB13E0001FD49 /* Images.xcassets */,
 				0888616B1F6BE077000C8295 /* Feedback.storyboard */,
 				0888616C1F6BE077000C8295 /* FeedbackCategorySelectionCell.swift */,
 				0888616D1F6BE077000C8295 /* FeedbackNoteCell.swift */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				088861701F6BE077000C8295 /* Feedback.storyboard in Resources */,
+				08D1456A1F6FB13E0001FD49 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
