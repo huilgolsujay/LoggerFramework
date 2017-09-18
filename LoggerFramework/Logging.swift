@@ -25,8 +25,9 @@ public class Ylogging
     }
     
     public func createLoginViewControllerWithDelegate(_ dgt: LoginDelegate) -> FeedbackViewController {
-        let frameworkBundle = Bundle(identifier: "com.ibm.mylogging.login")
-        let frameworkStoryboard = UIStoryboard(name: "Feedback", bundle:Bundle(for: FeedbackViewController.self))
+//        let frameworkBundle = Bundle(identifier: "com.ibm.mylogging.login")
+        
+        let frameworkStoryboard = UIStoryboard(name: "Feedback", bundle: Bundle(for: FeedbackViewController.self))
         let loginVC: FeedbackViewController? = frameworkStoryboard.instantiateViewController(withIdentifier: "FeedbackViewController") as? FeedbackViewController
         loginVC?.delegate = dgt
         return loginVC!
