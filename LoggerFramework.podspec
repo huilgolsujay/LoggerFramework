@@ -19,9 +19,12 @@ Pod::Spec.new do |s|
           s.source_files     = "LoggerFramework", "LoggerFramework/**/*.{h,m,swift}"
          s.resources = "LoggerFramework/**/*.{png,jpeg,jpg,xcassets,storyboard,xib}"
        #  s.subspec ‘iOSApiConnection’ 
-        s.dependency 'iOSApiConnection'
-  # subspec for users who don't want the third party PayPal 
-  # & Stripe bloat
+      #  s.dependency 'iOSApiConnection'
+s.default_subspec = 'iOSApiConnection'
+
+  s.subspec 'iOSApiConnection' do | iOSApiConnection |
+
+
  # end
 
 end
