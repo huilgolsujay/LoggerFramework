@@ -20,11 +20,11 @@ Pod::Spec.new do |s|
          s.resources = "LoggerFramework/**/*.{png,jpeg,jpg,xcassets,storyboard,xib}"
        #  s.subspec ‘iOSApiConnection’ 
       #  s.dependency 'iOSApiConnection'
+
+end
 s.default_subspec = 'iOSApiConnection'
 
   s.subspec 'iOSApiConnection' do | iOSApiConnection |
 
 
   end
-
-end
