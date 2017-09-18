@@ -25,6 +25,6 @@ s.default_subspec = 'iOSApiConnection'
   s.subspec 'iOSApiConnection' do | iOSApiConnection |
 
 
- # end
+  end
 
 end
