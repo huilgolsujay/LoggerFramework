@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
       #  s.dependency 'iOSApiConnection'
 s.default_subspec = 'iOSApiConnection'
 
-  s.subspec 'iOSApiConnection' 
+  s.subspec 'iOSApiConnection' do | iOSApiConnection |
 
 
  # end
