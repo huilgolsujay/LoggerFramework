@@ -29,7 +29,7 @@
         <!--Feedback-->
         <scene sceneID="nXs-UP-yd9">
             <objects>
-                <viewController storyboardIdentifier="feedback" id="Oe9-QL-sQx" customClass="FeedbackViewController" customModule="SampleRML" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="feedback" id="Oe9-QL-sQx" customClass="FeedbackViewController" customModule="LoggerFramework" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4ld-yq-eXh"/>
                         <viewControllerLayoutGuide type="bottom" id="JZd-CK-0y6"/>
@@ -64,7 +64,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RatingCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="RatingCell" rowHeight="66" id="J3Z-Bh-WB5" customClass="FeedbackRatingCell" customModule="SampleRML" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RatingCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="RatingCell" rowHeight="66" id="J3Z-Bh-WB5" customClass="FeedbackRatingCell" customModule="LoggerFramework" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="84" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J3Z-Bh-WB5" id="Zjr-Gk-4e7">
@@ -138,7 +138,7 @@
                                             <outlet property="star5" destination="Ftf-eJ-TbV" id="Qpf-aN-6XK"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CategoryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="seM-eg-W4D" customClass="FeedbackCategorySelectionCell" customModule="SampleRML" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CategoryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="seM-eg-W4D" customClass="FeedbackCategorySelectionCell" customModule="LoggerFramework" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="150" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="seM-eg-W4D" id="zhd-PE-7cO">
@@ -162,7 +162,7 @@
                                             <outlet property="title" destination="Lfp-Md-wAk" id="ZnZ-hC-dDy"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NoteCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" rowHeight="345" id="iIT-7W-LRs" customClass="FeedbackNoteCell" customModule="SampleRML" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NoteCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" rowHeight="345" id="iIT-7W-LRs" customClass="FeedbackNoteCell" customModule="LoggerFramework" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="194" width="375" height="345"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iIT-7W-LRs" id="fVH-Ip-Yeu">

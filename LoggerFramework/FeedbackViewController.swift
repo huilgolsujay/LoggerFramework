@@ -7,6 +7,7 @@
 //  with IBM Corp.
 
 import UIKit
+import Reachability
 //import TravelAndTransportationDataAdapter
 @objc public protocol LoginDelegate : class {
     
@@ -55,7 +56,11 @@ public class FeedbackViewController: UIViewController, UITableViewDelegate, UITa
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
+    
+    if (Reachability.forInternetConnection() != nil)
+    {
+        print("reachability")
+    }
         self.tableView.reloadData()
         var states = [FeedbackCategoryState]()
         states.append(FeedbackCategoryState(appName: "General", appId: "general", isSelected: false))
