@@ -2,6 +2,6 @@
 # Description
 This is a test app
 
-![Logger](LoggerFramework/Logger.png?raw=true "Logger")
+![Logger](https://github.com/huilgolsujay/LoggerFramework/blob/master/Logger.png?raw=true "Logger")
  
 
